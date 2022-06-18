@@ -1,0 +1,14 @@
+
+<table>
+    {% for plan in plans_all %}
+    <tr>
+        <td><b>{{plan.name}}</b></td>
+        <td>{{plan.description}}</td>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+    
+    {% endfor %}
+ 
+</table>
+<a href="{% url 'planbook' %}">Book a Plan</a>
